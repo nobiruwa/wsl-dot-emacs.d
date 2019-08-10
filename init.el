@@ -50,3 +50,10 @@ This requires win32yank.exe command."
            (executable-find win32yank))
   (setq interprogram-cut-function 'my-cut-function)
   (setq interprogram-paste-function nil))
+
+;;;;;;;;;;;;; 以下、ELispファイルを追加する必要があるものを設定 ;;;;;;
+;;;;;;;;;;;;; アルファベット順になるよう努力 ;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;
+;; skk
+;;;;;;;;
+(setq skk-large-jisyo "/usr/share/skk/SKK-JISYO.L")
