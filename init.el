@@ -88,7 +88,6 @@ This requires win32yank.exe command."
  '(browse-url-browser-function (quote browse-url-firefox))
  '(browse-url-netscape-program "netscape")
  '(column-number-mode t)
- '(custom-enabled-themes (quote (tango-dark)))
  '(line-number-mode t)
  '(menu-bar-mode nil)
  '(package-selected-packages
