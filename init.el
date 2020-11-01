@@ -86,24 +86,18 @@ This requires win32yank.exe command."
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(browse-url-browser-function (quote browse-url-firefox))
+ '(blink-cursor-mode nil)
+ '(browse-url-browser-function 'browse-url-firefox)
  '(browse-url-netscape-program "netscape")
  '(column-number-mode t)
+ '(custom-safe-themes
+   '("0fffa9669425ff140ff2ae8568c7719705ef33b7a927a0ba7c5e2ffcfac09b75" default))
  '(line-number-mode t)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   (quote
-    (ac-slime bash-completion browse-kill-ring ccls clang-format coffee-mode company-dict company-lsp csharp-mode ddskk dockerfile-mode elm-mode elpy emmet-mode f flycheck flycheck-pyflakes flymake god-mode gradle-mode graphviz-dot-mode groovy-mode haskell-mode howm idomenu intero jedi js2-mode lsp-java lsp-mode lsp-ui lua-mode markdown-mode navi2ch omnisharp powershell purescript-mode restclient shakespeare-mode slime swiper treemacs typescript-mode undo-tree vue-mode web-mode xclip yaml-mode yasnippet yasnippet-snippets)))
+   '(ac-slime bash-completion browse-kill-ring ccls clang-format coffee-mode company-dict company-lsp csharp-mode ddskk dockerfile-mode elm-mode elpy emmet-mode f flycheck flycheck-pyflakes flymake god-mode gradle-mode graphviz-dot-mode groovy-mode haskell-mode howm idomenu intero jedi js2-mode lsp-haskell lsp-java lsp-mode lsp-ui lua-mode markdown-mode navi2ch nginx-mode omnisharp plantuml-mode powershell purescript-mode restclient shakespeare-mode slime solarized-theme swiper tidal treemacs typescript-mode undo-tree vue-mode web-mode xclip yaml-mode yasnippet yasnippet-classic-snippets yasnippet-snippets))
  '(safe-local-variable-values
-   (quote
-    ((haskell-process-use-ghci . t)
-     (haskell-indent-spaces . 4))))
+   '((haskell-process-use-ghci . t)
+     (haskell-indent-spaces . 4)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(flymake-error ((t (:underline "red"))))
- '(flymake-warning ((t (:underline "yellow")))))
