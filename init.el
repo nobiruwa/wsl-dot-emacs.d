@@ -60,6 +60,7 @@ This requires win32yank.exe command."
 ;; http://misohena.jp/blog/2017-09-26-symbol-font-settings-for-emacs25.html
 (setq use-default-font-for-symbols nil)
 (set-face-attribute 'default nil :family "VL Gothic" :foundry "VL  " :slant 'normal :weight 'normal :height 120 :width 'normal)
+(set-face-attribute 'fixed-pitch nil :family "VL Gothic" :foundry "VL  " :slant 'normal :weight 'normal :height 120 :width 'normal)
 (set-fontset-font t 'japanese-jisx0208 (font-spec :family "VL Gothic"))
 (set-fontset-font t 'japanese-jisx0208-1978 (font-spec :family "VL Gothic"))
 (set-fontset-font t 'japanese-jisx0212 (font-spec :family "VL Gothic"))
