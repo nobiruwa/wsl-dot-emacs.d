@@ -9,7 +9,7 @@
 ;;;;;;;;
 ;; basic configuration
 ;;;;;;;;
-(let ((file (expand-file-name "~/.emacs.d/init_nobiruwa.el")))
+(let ((file (expand-file-name "init_nobiruwa.el" user-emacs-directory)))
   (if (file-exists-p file)
       (load-file file)))
 
