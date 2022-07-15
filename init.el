@@ -76,29 +76,3 @@ This requires win32yank.exe command."
 ;; skk
 ;;;;;;;;
 (setq skk-large-jisyo "/usr/share/skk/SKK-JISYO.L")
-
-;;;;;;;;
-;; Custom
-;;;;;;;;
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(browse-url-browser-function 'browse-url-firefox)
- '(browse-url-netscape-program "netscape")
- '(custom-safe-themes
-   '("0fffa9669425ff140ff2ae8568c7719705ef33b7a927a0ba7c5e2ffcfac09b75" default))
- '(package-selected-packages
-   '(ac-bash-completion browse-kill-ring cargo ccls clang-format coffee-mode company-dict counsel ddskk dockerfile-mode elm-mode elpy emmet-mode f flycheck flycheck-pyflakes flymake god-mode gradle-mode graphviz-dot-mode groovy-mode haskell-mode howm idomenu js2-mode lsp-haskell lsp-java lsp-mode lsp-pyright lsp-ui lua-mode magit markdown-mode navi2ch nginx-mode plantuml-mode powershell purescript-mode restclient rust-mode shakespeare-mode slime solarized-theme swiper tidal treemacs typescript-mode undo-tree vue-mode web-mode wgrep xclip yaml-mode yasnippet yasnippet-classic-snippets yasnippet-snippets))
- '(safe-local-variable-values
-   '((haskell-process-use-ghci . t)
-     (haskell-indent-spaces . 4))))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(flymake-error ((t (:underline "red"))))
- '(flymake-warning ((t (:underline "yellow")))))
