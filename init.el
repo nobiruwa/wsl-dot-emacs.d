@@ -13,8 +13,11 @@
   (if (file-exists-p file)
       (load-file file)))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; グローバルな設定
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;
-;; Clipbard
+;; clipbard
 ;;;;;;;;
 ;; xclip.elの代替
 ;; Ref: http://garin.jp/doc/unix/xwindow_clipboard
@@ -69,6 +72,15 @@ This requires win32yank.exe command."
 (set-fontset-font t 'japanese-jisx0213.2004-1 (font-spec :family "VL Gothic"))
 (set-fontset-font t 'jisx0201 (font-spec :family "VL Gothic"))
 (set-fontset-font t 'kana (font-spec :family "VL Gothic"))
+
+;;;;;;;;;;;;;; Emacs 標準Lisp ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;
+;; shell-mode (comint-mode)
+;;;;;;;;
+(require 'shell)
+(add-hook 'shell-mode-hook
+          (lambda ()
+            (company-mode -1)))
 
 ;;;;;;;;;;;;; 以下、ELispファイルを追加する必要があるものを設定 ;;;;;;
 ;;;;;;;;;;;;; アルファベット順になるよう努力 ;;;;;;;;;;;;;;;;;;;;;;;;;
