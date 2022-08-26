@@ -78,9 +78,7 @@ This requires win32yank.exe command."
 ;; shell-mode (comint-mode)
 ;;;;;;;;
 (require 'shell)
-(add-hook 'shell-mode-hook
-          (lambda ()
-            (company-mode -1)))
+(advice-add 'comint-completion-at-point :around #'shell-command-comint-completion-at-point-around)
 
 ;;;;;;;;;;;;; 以下、ELispファイルを追加する必要があるものを設定 ;;;;;;
 ;;;;;;;;;;;;; アルファベット順になるよう努力 ;;;;;;;;;;;;;;;;;;;;;;;;;
